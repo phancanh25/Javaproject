@@ -12,7 +12,7 @@ package Cuoiky;
 public class Tester extends Info{
     protected int Error;
 
-    public Tester(int Error) {
+    public Tester() {
         this.Error = 0;
     }
 
@@ -22,4 +22,14 @@ public class Tester extends Info{
     }
     
     int TinhLuong(){return LuongCanBan + HeSoLuong + Error * 200000;}
+    
+    protected void NhapTester(){
+        System.out.println("Errors: ");
+        this.Error = sc.nextInt();
+    }
+
+    public String toStringtes() {
+        return "Tester{" + "Error=" + Error + '}';
+    }
+    
 }

@@ -23,4 +23,17 @@ public class Programmer extends Info{
     int TinhLuong(){
         return LuongCanBan + HeSoLuong + OverTime;
     }
+    protected void Nhappro(){
+        System.out.println("OverTime: ");
+        this.OverTime = sc.nextInt();
+    }
+
+    public String toStringpro() {
+        return "Programmer{" + "OverTime=" + OverTime + '}';
+    }
+
+    
+    
+    
+    
 }

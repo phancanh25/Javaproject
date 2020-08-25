@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Cuoiky;
-
+import java.util.*;
 /**
  *
  * @author canh
@@ -83,5 +83,33 @@ public class Info {
     public int getLuongCanBan() {
         return LuongCanBan;
     }
+    
     int TinhLuong(){return 0;}
+    
+    Scanner sc = new Scanner(System.in);
+    
+    protected void nhap()
+    {
+        System.out.println("Nhap MaSo Nhan Vien: ");
+        this.MaNV = sc.nextLine();
+        System.out.println("Ho Ten Nhan Vien: ");
+        this.HoTen=sc.nextLine();
+        System.out.println("Dia Chi Nhan Vien: ");
+        this.DiaChi=sc.nextLine();
+        System.out.println("Ngay Bat dau: ");
+        this.Ngaybd = sc.nextInt();
+        System.out.println("Thang Bat dau: ");
+        this.Thangbd = sc.nextInt();
+        System.out.println("Nam Bat dau: ");
+        this.Nambd = sc.nextInt();
+        System.out.println("He So Luong: ");
+        this.HeSoLuong = sc.nextInt();
+        System.out.println("Luong Co Ban: ");
+        this.LuongCanBan = sc.nextInt(); 
+    }
+    public String toString()
+    {
+        return "\nMS NhanVien: " + this.MaNV + "\nTen Nhan Vien: " + this.HoTen+ "\nDia Chi Nhan Vien: " + this.DiaChi 
+                + "\nNgay Bat dau: " + this.Ngaybd + "/" + this.Thangbd + "/" + this.Nambd + "\nHe So Luong: " + this.HeSoLuong + "\nLuong Co Ban: " + this.LuongCanBan;
+    }
 }

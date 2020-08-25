@@ -12,7 +12,7 @@ package Cuoiky;
 public class Designer extends Info {
     protected int Bonus;
 
-    public Designer(int Bonus) {
+    public Designer() {
         this.Bonus = 0;
     }
 
@@ -22,4 +22,16 @@ public class Designer extends Info {
     }
     
     int TinhLuong(){return LuongCanBan + HeSoLuong + Bonus;}
+    
+    protected void NhapDes(){
+        System.out.println("Bonus: ");
+        this.Bonus = sc.nextInt();
+    }
+    
+    public String toStringdes() {
+        return "Designer{" + "Bonus=" + Bonus + '}';
+    }
+
+    
+    
 }
