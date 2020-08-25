@@ -11,5 +11,15 @@ package Cuoiky;
  */
 public class Designer extends Info {
     protected int Bonus;
+
+    public Designer(int Bonus) {
+        this.Bonus = 0;
+    }
+
+    public Designer(int Bonus, String MaNV, String HoTen, String DiaChi, int Ngaybd, int Thangbd, int Nambd, int HeSoLuong, int LuongCanBan) {
+        super(MaNV, HoTen, DiaChi, Ngaybd, Thangbd, Nambd, HeSoLuong, LuongCanBan);
+        this.Bonus = Bonus;
+    }
+    
     int TinhLuong(){return LuongCanBan + HeSoLuong + Bonus;}
 }
